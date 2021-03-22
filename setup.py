@@ -37,20 +37,8 @@ setup(
         'Topic :: Software Development :: Libraries',
     ],
     platforms='any',
-    package_data={
-        'joblib.test': [
-            'data/*.gz',
-            'data/*.gzip',
-            'data/*.bz2',
-            'data/*.xz',
-            'data/*.lzma',
-            'data/*.pkl',
-            'data/*.npy',
-            'data/*.npy.z',
-        ]
-    },
     packages=[
-        'joblib', 'joblib.test', 'joblib.test.data',
+        'joblib',
         'joblib.externals', 'joblib.externals.cloudpickle',
         'joblib.externals.loky', 'joblib.externals.loky.backend',
     ],
